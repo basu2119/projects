@@ -1,0 +1,69 @@
+* {
+    margin: 0; /*   slect all elements*/
+    padding: 0;
+    box-sizing: border-box; 
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 195, 161);
+    
+}   
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #2b0707;                                            
+}
+.card{
+    position:absolute; /*not dependent on parent*/
+    /*  3 lines are used to take elements center -> if i take in main with 
+    align-items: center;
+    justify-content: center;
+    display: flex;  this can take elements center but  more
+     1 element can not fit 1 on another  */
+    top: 50%;
+    left: 50%;
+    width: 230px;
+    height: 300px;
+    border: 2px solid #000;
+    border-radius: 7px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    object-fit: cover; /* to fit image in card */
+}
+#card2:hover{
+    z-index: 10;
+}
+#card3:hover{
+    z-index: 10;
+}
+#card4:hover{
+    z-index: 10;
+}
+
+#card1{
+    z-index: 4; /* z index> element show top*/
+    background-color: aqua;
+    transform: translate(-50%, -50%); /*center according to image */
+    
+}
+#card2{
+   z-index: 3;
+   transform: translate(-50%, -50%) rotate(-7deg);/* use transform everywhere because 
+   rotate property overwrite transform ->overcome issue (transform does not work) */
+    
+}
+#card3{
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(-14deg);
+    
+}
+#card4{
+   z-index: 1;
+   transform: translate(-50%, -50%) rotate(-20deg);
+   
+}
