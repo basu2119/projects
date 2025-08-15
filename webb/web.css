@@ -1,0 +1,198 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing:border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+#main{
+    height:100%;
+    width: 100%;
+
+}
+#header{
+    z-index: 22;
+    height: 10%;  /*vh adjust according to device*/
+    width: 100%;
+    position:fixed;   /* fixed postion after scrolling no change position*/
+    display:flex;     /*  all elements in one line */
+    align-items: center;
+    justify-content: space-around; /*  justify content is used at place of margen attribute
+    no need for margen every element 1 by 1 */
+    background-color: white;
+}
+#logo{
+    height: 70%;
+    
+}
+#logo img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;  /*   img fit perfect*/
+}
+.text{
+   color: rgb(9, 9, 151);
+   display: flex;
+}
+.text:hover{
+    color: rgb(17, 184, 184);
+}
+#contact{
+   
+    font-weight: lighter;
+}
+.icon{
+    padding: 10px;   /* space b/w content and border ->  inside div of elemet*/
+    border-radius: 50%;    /* use b-r =50% to make circle  */
+}
+.icon:hover{
+    background-color: lightblue;
+}
+#login{
+    display:flex;    /* arange elements in 1 line */
+    border-radius: 60px;
+
+}
+#login:hover{
+    background-color: lightblue;
+}
+
+#try{
+    background-color: rgb(2, 34, 30);
+    padding:10px 20px;    /*  top aur bottum 10px   //  right aur left 20px  */
+    color : white;
+
+}
+#try:hover{
+    background-color: seagreen;
+
+}
+#fakeheader{
+    height: 10%;
+    width:100%;
+
+}
+#page1{
+    height: 90%;
+    width: 100%;
+
+}
+#strip{
+    width: 100%;
+    height:8%;
+    background-color: rgb(29, 9, 104);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#content{
+    width: 100%;
+    height:78%;
+    display: flex;
+    justify-content: space-around;  /*  space b/w elements */
+    align-items: center;  /*  center all elements */
+
+}
+/*     box1  ka kaam jaam  */
+
+#box1{
+    width: 47%;
+    height:90%;
+    background-color: white;   
+   
+}
+#heading{
+    width: 100%;
+    height: 14%;
+    color: rgb(42, 6, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#heading h1{
+    font-weight: 700;   /*   increase weight decreaas text weight*/
+}
+
+#btn{
+    display:flex;
+}
+
+#box1 h1{
+    font-weight: 600;
+    color: black;
+    font-size: 50px;
+    margin: 30px 10px;
+}
+#box1 p{
+    font-weight: lighter;
+    font-size:x-large;
+    margin:30px 10px;
+}
+
+#btn{
+    display:flex;
+}
+#btn1{
+    text-align :center;
+    margin: 10px;
+    width:22%;
+    padding :10px 20px;
+    color :white;
+    background-color: rgb(51, 177, 219);
+    border-radius: 5px;}
+#btn1:hover{
+    background-color: blue;
+
+}
+#btn2{
+    border-radius: 5px;
+    text-align:center;
+    margin: 10px;
+    width:22%;
+    padding:10px 20px;
+    color :rgb(51, 177, 219);
+    border:1px solid rgb(51, 177, 219); 
+
+}
+#btn2:hover{
+      background-color: rgb(146, 146, 240);
+      color: rgb(5, 59, 77); 
+      border:rgb(5, 59, 77);;  
+}
+ /*   box2  ka kaaam jaaam */
+#box2{
+    position:relative;
+    width: 47%;
+    height:90%;
+    overflow: hidden;
+   
+}
+.img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;  /*   img fit perfect*/
+
+}
+.video-overlay{
+    position: absolute; /* Positions the video relative to the container */
+    top: 50%; /* Centers the video vertically */
+    left: 50%; /* Centers the video horizontally */
+    transform: translate(-50%, -50%); /* Adjusts for centering */
+    width: 80%; /* Adjust the size of the video */
+    height: 80%; /* Adjust the size of the video */
+    z-index: 1; /* Ensures the video is on top of the image */
+    border: none; /* Removes iframe border */
+}
+/*    p a g e 2  ->    */
+
+#page2{
+    height: 90%;
+    width: 100%;
+    background-color:grey;
+}
